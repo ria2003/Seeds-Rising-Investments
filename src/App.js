@@ -156,12 +156,12 @@ export default function SeedRisingInvestments() {
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center sm:text-left">Insurance</h3>
               </div>
 
-              {/* Main Insurance Image */}
+              {/* Main Insurance Image - Fixed for mobile */}
               <div className="mt-6 sm:mt-8 mb-8 sm:mb-12 flex justify-center">
                   <img 
                     src="/imgs/health.jpeg" 
                     alt="Comprehensive Health Insurance Coverage" 
-                    className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-32 sm:h-40 lg:h-48 object-cover object-center rounded-lg shadow-md"
+                    className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto object-contain rounded-lg shadow-md"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -237,14 +237,14 @@ export default function SeedRisingInvestments() {
 
               </div>
 
-              {/* Life Insurance Companies */}
+              {/* Life Insurance Companies - Fixed for mobile */}
               <div className="mb-8 sm:mb-12">
                 <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">Life Insurance Companies</h4>
-                <div className="flex justify-center">
+                <div className="flex justify-center overflow-x-auto">
                   <img 
                     src="/imgs/life_logo.jpeg" 
                     alt="Life Insurance Companies" 
-                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-40 sm:h-48 lg:h-60 object-cover object-center rounded-lg shadow-md"
+                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-auto object-contain rounded-lg shadow-md min-w-0"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -253,14 +253,14 @@ export default function SeedRisingInvestments() {
                 </div>
               </div>
 
-              {/* Health Insurance Companies */}
+              {/* Health Insurance Companies - Fixed for mobile */}
               <div className="mb-1">
                 <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">Non-Life Insurance Companies</h4>
-                <div className="flex justify-center">
+                <div className="flex justify-center overflow-x-auto">
                   <img 
                     src="/imgs/health_logo.jpeg" 
                     alt="Non-Life Insurance Companies" 
-                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-40 sm:h-48 lg:h-60 object-cover object-center rounded-lg shadow-md"
+                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-auto object-contain rounded-lg shadow-md min-w-0"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
