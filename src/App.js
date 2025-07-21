@@ -5,10 +5,10 @@ export default function SeedRisingInvestments() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header */}
       <header className="bg-gray-900 shadow-lg border-b border-blue-100">
-        <div className="container mx-auto px-6 py-8">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-6">
-              <div className="w-20 h-20 flex items-center justify-center">
+        <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 lg:space-x-6">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center flex-shrink-0">
                 <img 
                         src="/imgs/logo2.png" 
                         alt="Financial Advisor" 
@@ -20,14 +20,14 @@ export default function SeedRisingInvestments() {
                       />
               </div>
 
-              <div>
-                <h1 className="text-3xl font-bold text-white tracking-tight">Seeds Rising Investments</h1>
-                <p className="text-white font-medium text-lg">Investing in the seed for tomorrow</p>
+              <div className="text-center sm:text-left">
+                <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">Seeds Rising Investments</h1>
+                <p className="text-white font-medium text-base sm:text-lg">Investing in the seed for tomorrow</p>
               </div>
             </div>
 
-            <div className="hidden lg:flex items-center space-x-4">
-              <span className="bg-gradient-to-r from-green-400 to-green-800 text-white px-6 py-3 rounded-full text-md font-bold border-2 border-green-400 shadow-lg ">
+            <div className="flex items-center">
+              <span className="bg-gradient-to-r from-green-400 to-green-800 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-md font-bold border-2 border-green-400 shadow-lg">
                 ✓ AMFI REGISTERED
               </span>
             </div>
@@ -36,10 +36,10 @@ export default function SeedRisingInvestments() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-green-800 text-white py-14">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Your Trusted Financial Partner</h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+      <section className="bg-gradient-to-r from-green-600 to-green-800 text-white py-8 sm:py-12 lg:py-14">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">Your Trusted Financial Partner</h2>
+          <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed px-4">
             Navigate your financial journey with confidence. We provide comprehensive investment solutions, 
             insurance planning, and wealth management services tailored to your unique goals.
           </p>
@@ -47,121 +47,121 @@ export default function SeedRisingInvestments() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Professional Services</h2>
-            <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+      <section className="py-8 sm:py-12 bg-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">Our Professional Services</h2>
+            <div className="w-24 h-1 bg-green-600 mx-auto mb-4 sm:mb-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
             {/* Mutual Funds */}
-            <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">Mutual Fund Distribution</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800">Mutual Fund Distribution</h3>
               </div>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-700">SIP (Systematic Investment Plans)</span>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">SIP (Systematic Investment Plans)</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-700">Lumpsum Investments</span>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Lumpsum Investments</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-700">Portfolio Review & Rebalancing</span>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Portfolio Review & Rebalancing</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-700">Goal-based Investment Planning</span>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Goal-based Investment Planning</span>
                 </div>
               </div>
             </div>
 
             {/* Goal Planning */}
-            <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200">
-              <div className="flex items-center mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">Goal-Based Planning</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800">Goal-Based Planning</h3>
               </div>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">Child Education Planning</span>
+                  <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Child Education Planning</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">Marriage & Wedding Planning</span>
+                  <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Marriage & Wedding Planning</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">Home Purchase Planning</span>
+                  <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Home Purchase Planning</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">Dream Vacation Planning</span>
+                  <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Dream Vacation Planning</span>
                 </div>
               </div>
             </div>
 
             {/* Retirement Planning */}
-            <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200">
-              <div className="flex items-center mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">Retirement & Tax Planning</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800">Retirement & Tax Planning</h3>
               </div>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-700">National Pension Scheme (NPS)</span>
+                  <div className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">National Pension Scheme (NPS)</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-700">Tax Saving Investments</span>
+                  <div className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Tax Saving Investments</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-700">Retirement Corpus Planning</span>
+                  <div className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">Retirement Corpus Planning</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-700">ELSS Tax Saver Funds</span>
+                  <div className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700 text-sm sm:text-base">ELSS Tax Saver Funds</span>
                 </div>
               </div>
             </div>
 
             {/* Insurance */}
-            <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 col-span-1 md:col-span-2 xl:col-span-3">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mr-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 col-span-1 lg:col-span-2 xl:col-span-3">
+              <div className="flex flex-col sm:flex-row items-center justify-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-3 sm:mb-0 sm:mr-4">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                   </svg>
                 </div>
-                <h3 className="text-3xl font-bold text-gray-800">Insurance</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center sm:text-left">Insurance</h3>
               </div>
 
               {/* Main Insurance Image */}
-              <div className="mt-8 mb-12 flex justify-center">
+              <div className="mt-6 sm:mt-8 mb-8 sm:mb-12 flex justify-center">
                   <img 
                     src="/imgs/health.jpeg" 
                     alt="Comprehensive Health Insurance Coverage" 
-                    className="w-90 h-40 object-cover object-center rounded-lg shadow-md"
+                    className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-32 sm:h-40 lg:h-48 object-cover object-center rounded-lg shadow-md"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -170,17 +170,17 @@ export default function SeedRisingInvestments() {
               </div>
               
               {/* Four major categories in horizontal layout */}
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-6">
                 
                 {/* Health Plans */}
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                     </svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-4">Health Insurance</h4>
-                  <div className="space-y-2 text-sm">
+                  <h4 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4">Health Insurance</h4>
+                  <div className="space-y-2 text-xs sm:text-sm">
                     <p className="text-gray-600">Individual</p>
                     <p className="text-gray-600">Family Floater</p>
                     <p className="text-gray-600">Senior Citizen Plans</p>
@@ -192,13 +192,13 @@ export default function SeedRisingInvestments() {
 
                 {/* Travel */}
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-4">Travel Insurance</h4>
-                  <div className="space-y-2 text-sm">
+                  <h4 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4">Travel Insurance</h4>
+                  <div className="space-y-2 text-xs sm:text-sm">
                     <p className="text-gray-600">Domestic Travel</p>
                     <p className="text-gray-600">International Travel</p>
                     <p className="text-gray-600">Student Travel Protect</p>
@@ -208,13 +208,13 @@ export default function SeedRisingInvestments() {
 
                 {/* Group Insurance */}
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m3 5.197v0M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
                     </svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-4">Group Insurance</h4>
-                  <div className="space-y-2 text-sm">
+                  <h4 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4">Group Insurance</h4>
+                  <div className="space-y-2 text-xs sm:text-sm">
                     <p className="text-gray-600">Group Health</p>
                     <p className="text-gray-600">Group Personal Accident</p>
                     <p className="text-gray-600">Corporate Medical</p>
@@ -223,13 +223,13 @@ export default function SeedRisingInvestments() {
 
                 {/* Accident */}
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-4">Accident Insurance</h4>
-                  <div className="space-y-2 text-sm">
+                  <h4 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4">Accident Insurance</h4>
+                  <div className="space-y-2 text-xs sm:text-sm">
                     <p className="text-gray-600">Individual Accident Care</p>
                     <p className="text-gray-600">Family Accident Care</p>
                   </div>
@@ -238,13 +238,13 @@ export default function SeedRisingInvestments() {
               </div>
 
               {/* Life Insurance Companies */}
-              <div className="mb-12">
-                <h4 className="text-xl font-bold text-gray-800 mb-4 text-center">Life Insurance Companies</h4>
+              <div className="mb-8 sm:mb-12">
+                <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">Life Insurance Companies</h4>
                 <div className="flex justify-center">
                   <img 
                     src="/imgs/life_logo.jpeg" 
                     alt="Life Insurance Companies" 
-                    className="w-120 h-60 object-cover object-center rounded-lg shadow-md"
+                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-40 sm:h-48 lg:h-60 object-cover object-center rounded-lg shadow-md"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -255,12 +255,12 @@ export default function SeedRisingInvestments() {
 
               {/* Health Insurance Companies */}
               <div className="mb-1">
-                <h4 className="text-xl font-bold text-gray-800 mb-4 text-center">Non-Life Insurance Companies</h4>
+                <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">Non-Life Insurance Companies</h4>
                 <div className="flex justify-center">
                   <img 
                     src="/imgs/health_logo.jpeg" 
                     alt="Non-Life Insurance Companies" 
-                    className="w-120 h-60 object-cover object-center rounded-lg shadow-md"
+                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-40 sm:h-48 lg:h-60 object-cover object-center rounded-lg shadow-md"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
