@@ -10,14 +10,19 @@ export default function SeedRisingInvestments() {
             <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 lg:space-x-6">
               <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center flex-shrink-0">
                 <img 
-                        src="/imgs/logo2.png" 
-                        alt="Financial Advisor" 
-                        className="w-full h-full object-cover object-center"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                          e.target.nextSibling.style.display = 'flex';
-                        }}
-                      />
+                  src="/imgs/logo2.png" 
+                  alt="Financial Advisor" 
+                  className="max-w-full max-h-full object-contain"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="w-full h-full bg-gray-700 rounded-lg flex items-center justify-center text-gray-400" style={{display: 'none'}}>
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
               </div>
 
               <div className="text-center sm:text-left">
@@ -156,17 +161,24 @@ export default function SeedRisingInvestments() {
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center sm:text-left">Insurance</h3>
               </div>
 
-              {/* Main Insurance Image - Fixed for mobile */}
+              {/* Main Insurance Image - Fixed for proper display */}
               <div className="mt-6 sm:mt-8 mb-8 sm:mb-12 flex justify-center">
+                <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl">
                   <img 
                     src="/imgs/health.jpeg" 
                     alt="Comprehensive Health Insurance Coverage" 
-                    className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto object-contain rounded-lg shadow-md"
+                    className="w-full h-auto object-contain rounded-lg shadow-md"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
+                  <div className="w-full h-48 bg-gray-100 rounded-lg shadow-md flex items-center justify-center text-gray-400" style={{display: 'none'}}>
+                    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
               
               {/* Four major categories in horizontal layout */}
@@ -237,35 +249,49 @@ export default function SeedRisingInvestments() {
 
               </div>
 
-              {/* Life Insurance Companies - Fixed for mobile */}
+              {/* Life Insurance Companies - Fixed for proper display */}
               <div className="mb-8 sm:mb-12">
                 <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">Life Insurance Companies</h4>
-                <div className="flex justify-center overflow-x-auto">
-                  <img 
-                    src="/imgs/life_logo.jpeg" 
-                    alt="Life Insurance Companies" 
-                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-auto object-contain rounded-lg shadow-md min-w-0"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
+                <div className="flex justify-center">
+                  <div className="w-full max-w-sm sm:max-w-md lg:max-w-2xl">
+                    <img 
+                      src="/imgs/life_logo.jpeg" 
+                      alt="Life Insurance Companies" 
+                      className="w-full h-auto object-contain rounded-lg shadow-md"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="w-full h-32 bg-gray-100 rounded-lg shadow-md flex items-center justify-center text-gray-400" style={{display: 'none'}}>
+                      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Health Insurance Companies - Fixed for mobile */}
+              {/* Health Insurance Companies - Fixed for proper display */}
               <div className="mb-1">
                 <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">Non-Life Insurance Companies</h4>
-                <div className="flex justify-center overflow-x-auto">
-                  <img 
-                    src="/imgs/health_logo.jpeg" 
-                    alt="Non-Life Insurance Companies" 
-                    className="w-full max-w-sm sm:max-w-md lg:max-w-2xl h-auto object-contain rounded-lg shadow-md min-w-0"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
+                <div className="flex justify-center">
+                  <div className="w-full max-w-sm sm:max-w-md lg:max-w-2xl">
+                    <img 
+                      src="/imgs/health_logo.jpeg" 
+                      alt="Non-Life Insurance Companies" 
+                      className="w-full h-auto object-contain rounded-lg shadow-md"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="w-full h-32 bg-gray-100 rounded-lg shadow-md flex items-center justify-center text-gray-400" style={{display: 'none'}}>
+                      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
